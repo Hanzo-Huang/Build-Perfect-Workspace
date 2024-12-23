@@ -1,6 +1,9 @@
 # Install homebrew
 echo "Installing homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo >> /Users/hanzo/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/hanzo/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install required packages
 echo "Installing git"
